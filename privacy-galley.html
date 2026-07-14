@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — Galley</title>
-  <meta name="description" content="Privacy policy for the Galley EPUB editor iOS app.">
+  <meta name="description" content="Privacy policy for Galley: EPUB Editor &amp; Maker for iOS.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,74 +25,134 @@
     <p class="last-updated">Last updated: July 15, 2026</p>
 
     <p>
-      Your privacy matters. Galley is a local-first EPUB editor. It requires
-      no account, uses no analytics SDKs, and keeps your EPUB projects on your
-      device unless you choose optional iCloud sync or cloud import.
+      Your privacy matters. Galley is a local-first EPUB editor for iPhone and iPad.
+      It requires no account, embeds no third-party analytics SDKs, and keeps your
+      manuscripts on your device unless <strong>you</strong> export them or enable
+      optional iCloud Drive sync (Pro).
     </p>
 
     <h2>Short Version</h2>
     <ul>
-      <li>We <strong>do not collect</strong> any personal data on servers we operate.</li>
-      <li>We <strong>do not use</strong> analytics SDKs or third-party trackers.</li>
+      <li>We <strong>do not collect</strong> personal data on servers we operate.</li>
+      <li>We <strong>do not embed</strong> third-party analytics or advertising SDKs.</li>
       <li>We <strong>do not require</strong> an account or sign-up.</li>
-      <li>Your EPUB files, edits, and metadata stay on your device by default.</li>
-      <li>Optional iCloud Drive sync uses Apple's CloudKit; your projects sync across your own devices.</li>
-      <li>Optional cloud import uses OAuth you initiate; tokens are stored in the iOS Keychain.</li>
+      <li>Your EPUB projects stay on your device by default.</li>
+      <li>Optional sync uses <strong>iCloud Drive (Cloud Documents)</strong> — not a Galley CloudKit database, and not Google Drive / Dropbox / OneDrive / WebDAV.</li>
+      <li>Crash and usage analytics are <strong>opt-in and off by default</strong>.</li>
+      <li>Purchases use Apple StoreKit; we never receive your payment card details.</li>
     </ul>
 
-    <h2>Information We Collect</h2>
-    <p><strong>None on our servers.</strong> Galley does not collect, transmit, or store personal information on any server we operate. No analytics, no advertising identifiers, no profile building.</p>
+    <h2>Manuscripts and project files</h2>
+    <p>
+      EPUB working copies, images, and metadata are stored in the App’s sandbox
+      (and optionally in your iCloud Drive container when sync is enabled). Galley
+      does not upload your chapters to a Galley-operated server.
+    </p>
 
-    <h2>Data Stored on Your Device</h2>
-    <p>Galley stores data locally in its sandboxed container, including:</p>
+    <h2>Data stored on your device</h2>
+    <p>Galley stores data locally, including:</p>
     <ul>
-      <li>EPUB project files you import or create (XHTML, CSS, images, OPF, NCX/nav)</li>
-      <li>Edit history and undo snapshots for the current session</li>
-      <li>Library metadata (titles, authors, subjects, identifiers, cover)</li>
-      <li>Project settings and recent files list</li>
-      <li>Typography and editor preferences</li>
-      <li>Cloud import account tokens (Google Drive, Dropbox, OneDrive, WebDAV) — stored in iOS Keychain</li>
+      <li>EPUB project files you create or import (XHTML, CSS, images, OPF, NCX/nav)</li>
+      <li>Library metadata and cover art you set</li>
+      <li>Editor preferences and onboarding state</li>
+      <li>Analytics opt-in preference and sync enabled preference</li>
     </ul>
 
-    <h2>iCloud Drive Sync (Galley Pro, optional)</h2>
+    <h2>iCloud Drive sync (Galley Pro, optional)</h2>
     <p>
-      Galley Pro can sync EPUB project files across your iPhone and iPad via
-      iCloud Drive. Your projects remain in your own iCloud account; we cannot
-      access them. You can turn sync off in Settings.
+      Galley Pro can optionally mirror project folders you enable to
+      <strong>iCloud Drive</strong> under your Apple ID (container
+      <code>iCloud.me.tungngo.Galley</code>). This is Cloud Documents sync, not a
+      Galley-operated CloudKit database. We cannot access your iCloud contents.
+      If local and cloud copies diverge, Galley presents Keep Local / Keep Cloud
+      choices. You can turn sync off in Settings.
     </p>
 
-    <h2>Cloud Storage Import (optional)</h2>
+    <h2>Purchases</h2>
     <p>
-      If you connect Google Drive, Dropbox, OneDrive, or WebDAV, Galley uses
-      that provider's OAuth flow so you can browse and import books. Credentials
-      and tokens are stored in the iOS Keychain. We do not operate those services
-      and do not receive your cloud passwords. You can disconnect at any time in
-      Settings.
+      v1.0 offers <strong>Galley Pro</strong> (<code>galley_pro</code>) as a
+      one-time Non-Consumable via Apple StoreKit. The App reads entitlements
+      on-device to unlock features. Restore Purchases asks Apple to re-deliver
+      Non-Consumable purchases for the signed-in Apple ID. We do not receive or
+      store payment card numbers.
     </p>
 
-    <h2>Network Requests</h2>
+    <h2>Optional analytics (off by default)</h2>
     <p>
-      Galley only makes network requests that you initiate: ISBN metadata lookup
-      via Google Books / Open Library, and optional cloud storage or sync
-      connections. We do not proxy or log the contents of those requests.
+      If you turn on <strong>Share crash &amp; usage analytics</strong> in Settings, the App may:
+    </p>
+    <ul>
+      <li>
+        Subscribe to Apple <strong>MetricKit</strong> on-device. v1.0 keeps those
+        payloads local (system logging of counts only) and does not upload them
+        to a Galley backend.
+      </li>
+      <li>
+        Record coarse product events locally via system logging (for example:
+        app launched). Events do <strong>not</strong> include chapter HTML, file
+        names, project titles, ISBN values, or paths.
+      </li>
+    </ul>
+    <p>
+      v1.0 does not upload custom analytics to a Galley backend. Crash insights
+      may also appear in App Store Connect when you share diagnostics with
+      developers through Apple’s system settings. You can turn Galley’s in-app
+      toggle off at any time.
     </p>
 
-    <h2>Crash Reporting</h2>
+    <h2>Network requests you initiate</h2>
+    <ul>
+      <li><strong>ISBN lookup</strong> (optional): may query Open Library or similar public metadata APIs with the ISBN you enter.</li>
+      <li><strong>iCloud Drive sync</strong> (Pro, optional): Apple iCloud Drive for folders you choose to sync.</li>
+      <li><strong>StoreKit</strong>: Apple commerce endpoints for products and entitlements.</li>
+    </ul>
     <p>
-      We do not use third-party crash reporting. If you opt in to share crash
-      reports with Apple via the standard iOS dialog, that data goes to Apple
-      under their privacy policy.
+      Galley does not embed Google Drive, Dropbox, OneDrive, or WebDAV OAuth in v1.0.
+      Import and export use the system Files / Share Sheet flows you control.
     </p>
 
-    <h2>In-App Purchases</h2>
+    <h2>What we never collect</h2>
+    <ul>
+      <li>Name, email, phone number, or mailing address from Galley forms (none required)</li>
+      <li>Advertising identifiers (IDFA)</li>
+      <li>Precise location</li>
+      <li>Chapter text or manuscript content for analytics</li>
+      <li>Payment card numbers</li>
+    </ul>
+
+    <h2>Children</h2>
     <p>
-      Purchases (including Galley Pro) are processed by Apple via the App Store.
-      We do not receive or store payment information. Entitlement is verified
-      on-device via StoreKit.
+      Galley is rated for a general audience and is not directed at children under 13.
+      We do not knowingly collect personal information from children.
+    </p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li><strong>Analytics off (default)</strong> — Settings → Privacy</li>
+      <li><strong>Disable iCloud sync</strong> — Settings → iCloud Drive Sync</li>
+      <li><strong>Delete projects</strong> — Library (also remove cloud copies in Files if synced)</li>
+      <li><strong>Manage purchases</strong> — Apple ID → Purchases; Restore in Settings</li>
+    </ul>
+
+    <h2>Third parties</h2>
+    <p>
+      Galley does not embed third-party analytics or advertising SDKs. Apple provides
+      App Store, StoreKit, iCloud Drive, and (when enabled by you) system diagnostics.
+      Their privacy policies apply to those services.
+    </p>
+
+    <h2>Changes</h2>
+    <p>
+      We may update this policy for product or legal reasons. The “Last updated”
+      date will change; material changes will be reflected on this page used for
+      the App Store listing.
     </p>
 
     <h2>Contact</h2>
-    <p><a href="mailto:marblequillco@gmail.com">marblequillco@gmail.com</a></p>
+    <p>
+      Questions about privacy:
+      <a href="mailto:marblequillco@gmail.com">marblequillco@gmail.com</a>
+    </p>
   </main>
 
   <footer>

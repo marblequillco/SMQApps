@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Support — Galley</title>
-  <meta name="description" content="Support for the Galley EPUB editor iOS app.">
+  <meta name="description" content="Support for Galley: EPUB Editor &amp; Maker for iOS.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -31,34 +31,46 @@
       We typically respond within 24 hours.
     </p>
 
-    <h2>Galley — EPUB Editor</h2>
+    <h2>Galley — EPUB Editor &amp; Maker</h2>
     <div class="app-data">
       <h3>Getting Started</h3>
       <ul>
-        <li>Import an EPUB via the Files app, Share Sheet, or cloud storage (iCloud Drive, Google Drive, Dropbox, OneDrive, WebDAV)</li>
-        <li>Edit in WYSIWYG mode or open the code view for XHTML/CSS</li>
-        <li>Use the chapter sidebar to reorder, add, or delete chapters (spine updates automatically)</li>
-        <li>Edit the table of contents, metadata, and images from their panels</li>
-        <li>Run validation, then export as EPUB 2, EPUB 3, PDF, or DOCX</li>
+        <li>Create a blank EPUB from Library → New, or import EPUB 2/3 via Files / Share Sheet / Open In</li>
+        <li>Edit chapters in WYSIWYG mode; Pro unlocks XHTML/CSS code view and iPad split preview</li>
+        <li>Add, rename, reorder, or delete chapters — spine and navigation stay consistent</li>
+        <li>Use Metadata, Images, TOC, and Validation sheets from the editor</li>
+        <li>Export EPUB 3 via the system Share Sheet (Free). Pro unlocks EPUB 2 export and full validation + auto-fix</li>
       </ul>
     </div>
 
     <div class="app-data">
       <h3>Galley Pro</h3>
       <ul>
-        <li>One-time unlock for code view, split view (iPad), unlimited projects, full TOC/metadata editing, image tools, all export formats, and iCloud Drive sync</li>
-        <li>Purchase or restore from Settings → Galley Pro</li>
-        <li>Core WYSIWYG editing, 3 projects, basic metadata, EPUB 3 export, and validation stay free</li>
+        <li>One-time Non-Consumable unlock ($9.99): unlimited projects, code view, iPad split editor, TOC tools, image insert/replace/resize, full validation + auto-fix, EPUB 2 export, and optional iCloud Drive sync</li>
+        <li>Purchase or restore from Settings (or the paywall)</li>
+        <li>Free tier keeps core WYSIWYG editing, a 3-project library, basic metadata/cover, basic validation, and EPUB 3 export</li>
+        <li>Galley Pro+ is not offered for sale in v1.0</li>
       </ul>
     </div>
 
     <div class="app-data">
-      <h3>Known Issues</h3>
+      <h3>iCloud Drive sync (Pro)</h3>
       <ul>
-        <li><strong>DRM-protected EPUB:</strong> Galley cannot edit Adobe ADEPT, Readium LCP, or FairPlay DRM files — you'll see a clear "cannot edit DRM" notice.</li>
-        <li><strong>Fixed-layout (FXL):</strong> EPUB fixed-layout is view-only in v1.0; full FXL editing is planned for v2.0.</li>
-        <li><strong>iCloud sync:</strong> Requires iCloud Drive signed in and Galley Pro unlocked. Sync is file-based via iCloud Drive; resolve conflicts with last-write-wins.</li>
-        <li><strong>AI cleanup:</strong> The AI-assisted cleanup features are a post-launch IAP and are not available in v1.0.</li>
+        <li>Optional Pro feature using iCloud Drive (Cloud Documents), container <code>iCloud.me.tungngo.Galley</code></li>
+        <li>Enable in Settings → Sync projects to iCloud Drive, then Sync All or leave the editor to mirror folders</li>
+        <li>On another device: unlock Pro, enable sync, then Restore from iCloud</li>
+        <li>If copies diverge, Galley shows Keep Local / Keep Cloud — not silent last-write-wins</li>
+      </ul>
+    </div>
+
+    <div class="app-data">
+      <h3>Known Issues &amp; limits (v1.0)</h3>
+      <ul>
+        <li><strong>DRM-protected EPUB:</strong> Galley refuses Adobe ADEPT, Readium LCP, and FairPlay DRM files.</li>
+        <li><strong>Fixed-layout (FXL):</strong> Not a full FXL editor in v1.0.</li>
+        <li><strong>PDF / DOCX / Markdown import or export:</strong> Not included in v1.0 (on the roadmap).</li>
+        <li><strong>Apple Pencil markup:</strong> Not included in v1.0 (system Scribble in text fields may still work where iOS provides it).</li>
+        <li><strong>Third-party cloud OAuth:</strong> No Google Drive / Dropbox / OneDrive / WebDAV integration in v1.0 — use Files and Share Sheet.</li>
       </ul>
     </div>
 
@@ -66,15 +78,16 @@
     <p>
       We build based on user feedback. Email
       <a href="mailto:marblequillco@gmail.com">marblequillco@gmail.com</a>
-      with ideas — DOCX/Markdown import, batch operations, and Mac Catalyst are on the roadmap.
+      with ideas — DOCX/Markdown import, batch operations, PDF export, and Mac Catalyst are on the roadmap.
     </p>
 
     <h2>Report a Bug</h2>
     <p>
       Please email <a href="mailto:marblequillco@gmail.com">marblequillco@gmail.com</a>
       with a description of the issue, steps to reproduce, device model, and iOS
-      version. For crashes, include the crash log if possible (you can opt in to
-      share crash reports with Apple via the standard iOS dialog).
+      version. For crashes, include the crash log if possible. In the App you can
+      also opt in to Share crash &amp; usage analytics (off by default); see the
+      <a href="privacy-galley.html">Privacy Policy</a>.
     </p>
 
     <h2>Privacy</h2>
