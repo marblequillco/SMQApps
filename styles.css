@@ -14,6 +14,7 @@
   --card-bg: #ffffff;
   --marble: #6366f1;
   --symposium: #0891b2;
+  --galley: #16a34a;
   --quill: #d97706;
 }
 
@@ -138,6 +139,7 @@ nav a:hover {
 
 .badge-marble { background: var(--marble); }
 .badge-symposium { background: var(--symposium); }
+.badge-galley { background: var(--galley); }
 .badge-quill { background: var(--quill); }
 
 .app-card .price {
